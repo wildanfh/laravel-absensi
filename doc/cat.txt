@@ -1,0 +1,42 @@
+Computer assisted test (CAT)
+
+- setiap group (kelas) bisa punya beberapa quizzes
+- setiap quiz punya beberapa questions
+- setiap Question punya beberapa answers
+- user_answers
+
+Design DB secara umum
+table questions 
+id | number | text
+1  | 1      | Yang termasuk bahasa pemrograman adalah
+
+table answers 
+id | question_id | text
+1  | 1           | A. PHP
+2  | 1           | B. SQL
+3  | 1           | C. HTML
+4. | 1           | D. CSS
+
+Design DB yg de-normalisasi
+table questions 
+id | number | answer1 | answer2 | answer3 | answer4 | text
+1  | 1      | A. PHP  | B. SQL  | C. HTML | CSS     | Yang termasuk bahasa pemrograman adalah
+
+table answers 
+id | question_id | text
+1  | 1           | A. PHP
+2  | 1           | B. SQL
+3  | 1           | C. HTML
+4. | 1           | D. CSS
+
+modal:
+1. skill & experience
+2. script beli
+
+
+faktor penentu harga :
+1. level dari client
+
+2. level support
+a. jual putus (hanya untuk software) | tapi bisa ambil profit dari hosting
+b. berlangganan (software as a service)
